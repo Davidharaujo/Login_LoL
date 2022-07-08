@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter',sans-serif ;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_login {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #F7F7F7;
+    padding: 40px;
+}
+
+.login {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_login {
+    font-size: 20px ;
+    font-weight: 200;
+}
+
+.login input {
+    height: 40px;
+    width: 100%;
+    margin: 10px;
+    background-color: #E8E6E6;
+    border: none
+}
+
+
+
+.img_chamada {
+    background-image: url(./img/wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 75%;
+}
