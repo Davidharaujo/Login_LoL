@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/league-of-legends-computer-icons-ongamenet-starleague-video-game-electronic-sports-voice-actor-e2215679f999d279ae207bc8993804c1.png">
     <title>Login - League of Legends</title>
 </head>
 <body>
     <main class="container">
         <section class="container_login">
-            <div class="logo">
+            <figure class="logo">
                 <img src="./img/logo-riot.png" alt="riot_logo" class="img_logo">
-            </div>
+            </figure>
             <div class="login">
                 <h2 class="titulo_login">Fazer login</h2>
-                <input type="text">
-                <input type="text">
-                <button><img class="logo-fb" src="./img/facebook-logo-fill 1.png" alt="facebook_logo"></button>
-                <button><img class="logo-google" src="./img/google-logo-fill 1.png" alt="google_logo"></button>
-                <button><img class="logo-apple" src="./img/apple-logo-fill 1.png" alt="apple_logo"></button>
-                <input type="checkbox" name="conect">
-                <label for="conect">Manter Login</label>
+                <input class="input-user" type="text" name="user">
+                <label class="user_label" for="user">USUÁRIO</label>
+                <input class="input-pass" type="password" name="pass">
+                <label class="pass_label" for="pass">SENHA</label>
+                <button class="logo-fb"><img src="./img/facebook-logo-fill 1.png" alt="facebook_logo"></button>
+                <button class="logo-google"><img src="./img/google-logo-fill 1.png" alt="google_logo"></button>
+                <button class="logo-apple"><img src="./img/apple-logo-fill 1.png" alt="apple_logo"></button>
+                <form class="check">
+                    <input  type="checkbox" name="conect">
+                    <label class="check-label" for="conect">Manter Login</label>
+                </form>
             </div>
             <div class="next">
-                <button><img src="./img/arrow-right-thin 1.png" alt=""></button>
+                <button class="next-btn" id="btn"><img src="./img/arrow-right-thin 1.png" alt=""></button>
                 <h3>Não consegue iniciar sessão?</h3>
                 <a href="">Criar Conta</a>
             </div>

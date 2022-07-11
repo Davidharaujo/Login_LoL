@@ -13,7 +13,7 @@
 }
 
 .container_login {
-    width: 25%;
+    width: 400px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -31,20 +31,109 @@
 }
 
 .titulo_login {
-    font-size: 20px ;
-    font-weight: 200;
+    font-size: 15px ;
+    font-weight: 600;
 }
 
-.login input {
+.input-pass, .input-user {
     height: 40px;
     width: 100%;
     margin: 10px;
+    border: none;
     background-color: #E8E6E6;
-    border: none
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 7px;
 }
 
+.user_label {
+    position: absolute;
+    top: 283px;
+    left: 60px;
+    font-size: 11px;
+    font-weight: bold;
+}
 
+.pass_label {
+    position: absolute;
+    top: 343px;
+    left: 60px;
+    font-size: 11px;
+    font-weight: bold;
+}
 
+.login button {
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button img {
+    width: 25px;
+}
+
+.logo-fb {
+    background-color: #2051FF;
+}
+
+.logo-google {
+    background-color: #8A0000;
+}
+
+.logo-apple {
+    background-color: #000000;
+}
+
+.check {
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+    margin: 10px;
+}
+.check input {
+    margin-right: 5px;
+    background-image: #D9D9D9;
+}
+
+.check-label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.next {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.next-btn {
+    width: 51px;
+    height: 47px;
+    background-color: #FF002E36;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.next-btn--on {
+    width: 51px;
+    height: 47px;
+    background-color: #FF002E;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.next h3, .next a {
+    color: #A6A6A6;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 2px;
+}
 .img_chamada {
     background-image: url(./img/wallpaper.png);
     background-size: cover;
@@ -52,4 +141,15 @@
     background-position: center;
     height: 100%;
     width: 75%;
+}
+
+@media screen and (max-width: 920px){
+    .container_login {
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+    .img_chamada {
+        background-attachment: fixed;
+    }
 }
